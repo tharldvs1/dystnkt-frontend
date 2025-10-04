@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "vercel-build": "next build && rm -rf .next/cache",
     "start": "next start",
     "lint": "eslint"
   },
@@ -16,7 +17,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -24,7 +25,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.13",
+    "tailwindcss": "^4.1.14",
     "typescript": "^5"
   }
 }
